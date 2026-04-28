@@ -27,8 +27,8 @@ public class Sorter {
     private void quickSort(int[] arr, int low, int high) {
         if (low <high) {
             int pivotIndex = partition(arr, low, high);
-            quickSort(arr, low, pivotIndex - 1); // sort left side
-            quickSort(arr, pivotIndex+ 1, high); // sort right side
+            quickSort(arr, low, pivotIndex - 1); //sort left
+            quickSort(arr, pivotIndex+ 1, high); //sort right
         }
     }
 
@@ -60,7 +60,6 @@ public class Sorter {
         }
         return arr;
     }
-
     //helper to print array
     public void printArray(int[] arr) {
         for (int val : arr) {
